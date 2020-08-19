@@ -11,18 +11,8 @@
 
     <!--link css assets-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="./assets/css/main.css">
-
-    <style>
-        /* Set the size of the div element that contains the map */
-        #map {
-            height: 253px;
-            /* The height is 400 pixels */
-            width: 168px;
-            /* The width is 168 pixels */
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
@@ -46,7 +36,7 @@
                 </section>
 
                 <section id="staff-section">
-                    <article id="kelly" class="col-sm-12 staff-article">
+                    <article id="kelly" class="staff-article">
                         <h2 class="title-article">Kelly Garret</h2>
 
                         <div class="div-img-collab">
@@ -59,12 +49,12 @@
                             suscipit, <strong>nostrum repellendus</strong> reprehenderit laboriosam ea.</p>
 
                         <div class="div-btn-adress">
-                            <button class="btn-success btn-adress"><a href="/assets/vCard/kelly.vcf">Télécharger les
+                            <button class="btn btn-success btn-adress"><a href="/assets/vCard/kelly.vcf">Télécharger les
                                     coordonnées</a></button>
                         </div>
                     </article>
 
-                    <article id="jill" class="col-sm-12 staff-article">
+                    <article id="jill" class="staff-article">
                         <h2 class="title-article">Jill Munroe</h2>
 
                         <div class="div-img-collab">
@@ -77,12 +67,12 @@
                             suscipit, <strong>nostrum repellendus</strong> reprehenderit laboriosam ea.</p>
 
                         <div class="div-btn-adress">
-                            <button class="btn-success btn-adress"><a href="/assets/vCard/jill.vcf">Télécharger les
+                            <button class="btn btn-success btn-adress"><a href="/assets/vCard/jill.vcf">Télécharger les
                                     coordonnées</a></button>
                         </div>
                     </article>
 
-                    <article id="sabrina" class="col-sm-12 staff-article">
+                    <article id="sabrina" class="staff-article">
                         <h2 class="title-article">Sabrina Duncan</h2>
 
                         <div class="div-img-collab">
@@ -95,73 +85,123 @@
                             suscipit, <strong>nostrum repellendus</strong> reprehenderit laboriosam ea.</p>
 
                         <div class="div-btn-adress">
-                            <button class="btn-success btn-adress"><a href="/assets/vCard/sabrina.vcf">Télécharger les
+                            <button class="btn btn-success btn-adress"><a href="/assets/vCard/sabrina.vcf">Télécharger
+                                    les
                                     coordonnées</a></button>
                         </div>
                     </article>
                 </section>
             </div>
 
-            <section id="form-section">
-                <h3>Contactez-nous : </h3>
-                <form action="">
-                    <div class="form-group">
-                        <select class="form-control" name="project-type" id="project-type">
-                            <option value="">Sélectionnez le type de projet</option>
-                            <option value="type1">Type 1</option>
-                            <option value="type2">Type 2</option>
-                            <option value="type3">Type 3</option>
-                            <option value="type4">Type 4</option>
-                        </select>
-                    </div>
+            <div class="row">
+                <section id="formulaire-section" class="col-sm-12">
+                    <h3>Contactez-nous : </h3>
+                    <form action="">
+                        <div class="form-group">
+                            <select class="form-control" name="project-type" id="project-type">
+                                <option value="">Sélectionnez le type de projet</option>
+                                <option value="type1">Type 1</option>
+                                <option value="type2">Type 2</option>
+                                <option value="type3">Type 3</option>
+                                <option value="type4">Type 4</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Votre nom (*)">
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Votre nom (*)">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Votre prénom">
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Votre prénom">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Un numéro de téléphone (*)">
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Un numéro de téléphone (*)">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Un email (*)">
-                    </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Un email (*)">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="project-descr">Un peu plus sur votre projet</label>
-                        <textarea name="project-descr" id="project-descr" class="form-control"></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="project-descr">Un peu plus sur votre projet</label>
+                            <textarea name="project-descr" id="project-descr" class="form-control"></textarea>
+                        </div>
 
-                    <div id="div-btn-subForm">
-                        <button type="submit" class="btn-success">Envoyez votre demande</button>
-                    </div>
-                </form>
-            </section>
+                        <div id="div-btn-subForm">
+                            <button type="submit" class="btn btn-success">Envoyez votre demande</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
         </main>
 
-        <footer class="row">
-            <section id="adress-section">
-                <div id="map"></div>
-            </section>
+        <footer>
+            <div class="row">
+                <section id="adress-section" class="col-sm-12">
+                    <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.8172724118604!2d1.4201802152752203!3d43.58952227912347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb0a0ad72c4b%3A0xa0f9854860384699!2sADRAR%20Formation%20Toulouse!5e0!3m2!1sfr!2sfr!4v1597843994446!5m2!1sfr!2sfr"
+                        width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
 
+                    <div id="adress-article">
+                        <p>
+                            4D - Assets Management <br>
+                            10, Place de la République <br>
+                            31000 Toulouse
+                        </p>
+                        <table class="table" id="hour-table">
+                            <thead>
+                                <tr>
+                                    <th scope="row">Lundi</th>
+                                    <td>De 9h à 12h30 et 14h à 18h30</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Mardi</th>
+                                    <td>De 9h à 12h30 et 14h à 18h30</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Mercredi</th>
+                                    <td>De 9h à 12h30 et 14h à 18h30</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Jeudi</th>
+                                    <td>De 9h à 12h30 et 14h à 18h30</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Vendredi</th>
+                                    <td>De 9h à 12h30 et 14h à 18h30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="legal-section" class="col-sm-12">
+
+                    <p>
+                        <a class="icon-link" href=""><span class="icon-facebook2"></span> Suivez notre activité sur
+                            Facebook</a>
+                    </p>
+
+                    <p>
+                        <a class="icon-link" href=""><span class="icon-linkedin"></span> Suivez notre activité sur
+                            LinkedIn</a>
+                    </p>
+
+                    <p id="legal-info">
+                        <a href="">Mention légales</a> <span>copyright &copy; 4Dam - 2020</span>
+                    </p>
+                </section>
+            </div>
         </footer>
     </div>
 
-    <script> // Initialize and add the map
-        function initMap() {
-            // The location of the company
-            let uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            let map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 4, center: uluru });
-            // The marker, positioned at Uluru
-            let marker = new google.maps.Marker({ position: uluru, map: map });
-        }
-    </script>
 </body>
 
 </html>

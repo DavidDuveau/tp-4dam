@@ -22,13 +22,22 @@ header {
   margin: 0.5em;
 }
 
+.btn-success {
+  background-color: #9fcf67 !important;
+}
+
 #staff-section {
-  margin: 0 0.5em;
+  margin: 0.5em;
   text-align: justify;
 }
 
 .staff-article {
   margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.staff-article p {
+  padding: 0 1em;
 }
 
 .title-article {
@@ -56,13 +65,48 @@ header {
   text-decoration: none;
 }
 
-#form-section {
+#formulaire-section {
   padding: 0.8em;
-  margin-top: 2em;
+  margin: 0 1em 0.5em 1em;
   border: 1px solid rgb(41, 41, 41);
 }
 
 #div-btn-subForm {
   display: flex;
   justify-content: center;
+}
+
+#adress-section {
+  margin: 0 1em 0.5em 1em;
+  border: 1px solid rgb(41, 41, 41);
+}
+
+#map {
+  margin: 0.5em 0 2em 0;
+}
+
+#adress-article {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#hour-table {
+  padding: 0.5em;
+}
+
+#legal-section {
+  padding-top: 1em;
+  margin: 0 1em 0.5em 1em;
+  border: 1px solid rgb(41, 41, 41);
+  text-align: justify;
+}
+
+.icon-link {
+  color: rgb(41, 41, 41);
+}
+
+#legal-info {
+  font-size: 0.5em;
+  display: flex;
+  justify-content: space-between;
 }
