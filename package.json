@@ -2,7 +2,7 @@
   "name": "4dam",
   "version": "1.0.0",
   "description": "single page app for 4dam society",
-  "main": "./dist/main.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
