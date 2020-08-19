@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 253px;
+            /* The height is 400 pixels */
+            width: 168px;
+            /* The width is 168 pixels */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -48,7 +59,8 @@
                             suscipit, <strong>nostrum repellendus</strong> reprehenderit laboriosam ea.</p>
 
                         <div class="div-btn-adress">
-                            <button class="btn-success btn-adress">Télécharger les coordonnées</button>
+                            <button class="btn-success btn-adress"><a href="/assets/vCard/kelly.vcf">Télécharger les
+                                    coordonnées</a></button>
                         </div>
                     </article>
 
@@ -56,7 +68,7 @@
                         <h2 class="title-article">Jill Munroe</h2>
 
                         <div class="div-img-collab">
-                            <img src="/assets/images/collaboratrice.png" alt="Kelly-Garret" class="img-collab">
+                            <img src="/assets/images/collaboratrice.png" alt="Jill-Munroe" class="img-collab">
                         </div>
 
                         <p> Dignissimos iure laudantium <strong>cum illum</strong> temporibus odit, rerum labore
@@ -65,7 +77,8 @@
                             suscipit, <strong>nostrum repellendus</strong> reprehenderit laboriosam ea.</p>
 
                         <div class="div-btn-adress">
-                            <button class="btn-success btn-adress">Télécharger les coordonnées</button>
+                            <button class="btn-success btn-adress"><a href="/assets/vCard/jill.vcf">Télécharger les
+                                    coordonnées</a></button>
                         </div>
                     </article>
 
@@ -73,7 +86,7 @@
                         <h2 class="title-article">Sabrina Duncan</h2>
 
                         <div class="div-img-collab">
-                            <img src="/assets/images/collaboratrice.png" alt="Kelly-Garret" class="img-collab">
+                            <img src="/assets/images/collaboratrice.png" alt="Sabrina-Duncan" class="img-collab">
                         </div>
 
                         <p> Dignissimos iure laudantium <strong>cum illum</strong> temporibus odit, rerum labore
@@ -82,7 +95,8 @@
                             suscipit, <strong>nostrum repellendus</strong> reprehenderit laboriosam ea.</p>
 
                         <div class="div-btn-adress">
-                            <button class="btn-success btn-adress">Télécharger les coordonnées</button>
+                            <button class="btn-success btn-adress"><a href="/assets/vCard/sabrina.vcf">Télécharger les
+                                    coordonnées</a></button>
                         </div>
                     </article>
                 </section>
@@ -125,13 +139,29 @@
                     <div id="div-btn-subForm">
                         <button type="submit" class="btn-success">Envoyez votre demande</button>
                     </div>
-
                 </form>
-
             </section>
         </main>
+
+        <footer class="row">
+            <section id="adress-section">
+                <div id="map"></div>
+            </section>
+
+        </footer>
     </div>
 
+    <script> // Initialize and add the map
+        function initMap() {
+            // The location of the company
+            let uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            let map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: uluru });
+            // The marker, positioned at Uluru
+            let marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+    </script>
 </body>
 
 </html>

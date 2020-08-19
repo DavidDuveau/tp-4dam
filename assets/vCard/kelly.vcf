@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Garret;Kelly
+FN:Kelly Garret
+ORG:4D Assets Managment
+TITLE:Associate
+TEL;TYPE=WORK,VOICE:(717) 574-5688
+ADR;TYPE=WORK:;;31000 Toulouse at 10 Place de la République;France
+LABEL;TYPE=:;;31000 Toulouse at 10 Place de la République;\nFrance
+EMAIL;TYPE=PREF, INTERNET:K.Garret@4dam.com
+REV:20080424T195243Z
+END:VCARD

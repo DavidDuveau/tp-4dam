@@ -51,6 +51,11 @@ header {
   margin: 0.5em 0;
 }
 
+.btn-adress a {
+  color: white;
+  text-decoration: none;
+}
+
 #form-section {
   padding: 0.8em;
   margin-top: 2em;
