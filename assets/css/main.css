@@ -9910,9 +9910,7 @@ header #div-logo #img-logo {
 }
 header h1 {
   color: #0f110f;
-}
-header h1#main-title {
-  font-size: 3.5vw;
+  font-size: 0.9em;
   text-align: center;
 }
 header h1 span.kolossal {
