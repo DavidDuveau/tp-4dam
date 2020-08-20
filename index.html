@@ -10,8 +10,7 @@
     <link rel="icon" href="4dam-logo.png">
 
     <!--link css assets-->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
@@ -19,12 +18,13 @@
 <body>
     <!--main bootstrap container 100% width-->
     <div class="container-fluid">
-        <header class="row">
+        <header class="row border-style">
             <div class="col-sm-12" id="div-logo">
                 <img src="/assets/images/4dam-logo.png" alt="4dam-logo" id="img-logo">
             </div>
 
-            <h1 id="main-title" class="col-sm-12">Société de courtage - 4d Assets Management</h1>
+            <h1 id="main-title" class="col-sm-12">Société de <span class="kolossal">courtage</span> - 4d Assets
+                Management</h1>
         </header>
 
         <main>
@@ -94,7 +94,7 @@
             </div>
 
             <div class="row">
-                <section id="formulaire-section" class="col-sm-12">
+                <section id="formulaire-section" class="col-sm-12 border-style">
                     <h3>Contactez-nous : </h3>
                     <form action="">
                         <div class="form-group">
@@ -138,7 +138,7 @@
 
         <footer>
             <div class="row">
-                <section id="adress-section" class="col-sm-12">
+                <section id="adress-section" class="col-sm-12 border-style">
                     <iframe id="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.8172724118604!2d1.4201802152752203!3d43.58952227912347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb0a0ad72c4b%3A0xa0f9854860384699!2sADRAR%20Formation%20Toulouse!5e0!3m2!1sfr!2sfr!4v1597843994446!5m2!1sfr!2sfr"
                         width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""
@@ -151,13 +151,12 @@
                             31000 Toulouse
                         </p>
                         <table class="table" id="hour-table">
-                            <thead>
-                                <tr>
+                            <tbody>
+                                <tr id="monday">
                                     <th scope="row">Lundi</th>
                                     <td>De 9h à 12h30 et 14h à 18h30</td>
                                 </tr>
-                            </thead>
-                            <tbody>
+
                                 <tr>
                                     <th scope="row">Mardi</th>
                                     <td>De 9h à 12h30 et 14h à 18h30</td>
@@ -179,20 +178,35 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                        <div>
+                            <div>
+                                <p>
+                                    <span class="icon-phone"></span>
+                                    <a href="tel:+33561232323">(+33) 05 61 23 23 23</a>
+                                </p>
+
+                                <p>
+                                    <span class="icon-envelop"></span>
+                                    <a href="mailto:hello@4dam.com">hello@4dam.com</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <section id="legal-section" class="col-sm-12">
+                <section id="legal-section" class="col-sm-12 border-style">
+                    <div>
+                        <p>
+                            <a class="icon-link" href=""><span class="icon-facebook2"></span> Suivez notre activité sur
+                                Facebook</a>
+                        </p>
 
-                    <p>
-                        <a class="icon-link" href=""><span class="icon-facebook2"></span> Suivez notre activité sur
-                            Facebook</a>
-                    </p>
-
-                    <p>
-                        <a class="icon-link" href=""><span class="icon-linkedin"></span> Suivez notre activité sur
-                            LinkedIn</a>
-                    </p>
+                        <p>
+                            <a class="icon-link" href=""><span class="icon-linkedin"></span> Suivez notre activité sur
+                                LinkedIn</a>
+                        </p>
+                    </div>
 
                     <p id="legal-info">
                         <a href="">Mention légales</a> <span>copyright &copy; 4Dam - 2020</span>

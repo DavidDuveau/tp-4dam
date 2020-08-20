@@ -1,0 +1,11 @@
+/**
+*global variables 
+**/
+
+$main-text-color: rgb(15, 17, 15); //main text color for the website
+
+$emphasis-main-text: #9fcf67;
+
+$border-color: darken($emphasis-main-text, 20%);
+
+$highlight-article: lighten($emphasis-main-text, 30%);
