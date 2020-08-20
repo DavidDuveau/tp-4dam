@@ -17,18 +17,76 @@
 <body>
     <!--main bootstrap container 100% width-->
     <div class="container-fluid">
-        <header class="row border-style">
-            <div class="col-sm-12" id="div-logo">
-                <img src="/assets/images/4dam-logo.png" alt="4dam-logo" id="img-logo">
-            </div>
+        <header class="border-style">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="/assets/images/4dam-logo.png" alt="4dam-logo" id="img-logo">
+                </div>
 
-            <h1 id="main-title" class="col-sm-12">Société de <span class="kolossal">courtage</span> - 4d
-                Assets
-                Management</h1>
+                <div class="col-sm-12">
+                    <h1 id="main-title">
+                        Société de <span class="kolossal">courtage</span> - 4d Assets Management
+                    </h1>
+                </div>
+            </div>
         </header>
 
         <main>
             <div class="row">
+                <!--carousel from bootstrap-->
+                <section id="carousel-presentation" class="col-sm-12">
+                    <div id="carouselDesk" class="carousel slide border-style" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselDesk" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselDesk" data-slide-to="1"></li>
+                            <li data-target="#carouselDesk" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-carousel" src="assets/images/money.jpg" alt="First slide">
+
+                                <div class="carousel-caption">
+                                    <h5>Lorem</h5>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-carousel" src="assets/images/laptop.jpg"
+                                    alt="Second slide">
+
+                                <div class="carousel-caption">
+                                    <h5>Lorem</h5>
+
+                                    <p>Labore quo similique doloremque explicabo rerum aliquam tenetur est laudantium
+                                        unde? </p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-carousel" src="assets/images/building.jpg"
+                                    alt="Third slide">
+
+                                <div class="carousel-caption">
+                                    <h5>Lorem</h5>
+
+                                    <p> Animi ea ex ad harum! Eos itaque similique explicabo magni in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselDesk" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselDesk" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </section>
+
                 <section id="synop-section" class="col-sm-12">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi voluptas repellat
                         voluptates
@@ -94,128 +152,135 @@
                         </div>
                     </article>
                 </section>
-            </div>
 
-            <div class="row">
-                <section id="formulaire-section" class="col-sm-12 border-style">
-                    <h3>Contactez-nous : </h3>
-                    <form action="" id="form-contact">
-                        <div class="form-group">
-                            <select class="form-control" name="project-type" id="project-type">
-                                <option value="">Sélectionnez le type de projet</option>
-                                <option value="type1">Type 1</option>
-                                <option value="type2">Type 2</option>
-                                <option value="type3">Type 3</option>
-                                <option value="type4">Type 4</option>
-                            </select>
-                        </div>
+                <section id="formulaire-section" class="col-sm-12">
+                    <div class=" border-style" id="div-form">
+                        <h3>Contactez-nous : </h3>
+                        <form action="" id="form-contact">
+                            <div class="form-group">
+                                <select class="form-control" name="project-type" id="project-type">
+                                    <option value="">Sélectionnez le type de projet</option>
+                                    <option value="type1">Type 1</option>
+                                    <option value="type2">Type 2</option>
+                                    <option value="type3">Type 3</option>
+                                    <option value="type4">Type 4</option>
+                                </select>
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Votre nom (*)" required id="nom">
-                        </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Votre nom (*)" required id="nom">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Votre prénom">
-                        </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Votre prénom">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Un numéro de téléphone (*)" required
-                                id="tel">
-                        </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Un numéro de téléphone (*)"
+                                    required id="tel">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Un email (*)" required id="email">
-                        </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Un email (*)" required id="email">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="project-descr">Un peu plus sur votre projet</label>
-                            <textarea name="project-descr" id="project-descr" class="form-control"></textarea>
-                        </div>
+                            <div class="form-group">
+                                <label for="project-descr">Un peu plus sur votre projet</label>
+                                <textarea name="project-descr" id="project-descr" class="form-control"></textarea>
+                            </div>
 
-                        <div id="div-btn-subForm">
-                            <button type="submit" class="btn btn-success" id="send-btn" disabled>Envoyez votre
-                                demande</button>
-                        </div>
-                    </form>
+                            <div id="div-btn-subForm">
+                                <button type="submit" class="btn btn-success" id="send-btn" disabled>Envoyez votre
+                                    demande</button>
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </div>
         </main>
 
         <footer>
             <div class="row">
-                <section id="adress-section" class="col-sm-12 border-style">
-                    <iframe id="map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.8172724118604!2d1.4201802152752203!3d43.58952227912347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb0a0ad72c4b%3A0xa0f9854860384699!2sADRAR%20Formation%20Toulouse!5e0!3m2!1sfr!2sfr!4v1597843994446!5m2!1sfr!2sfr"
-                        width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+                <section id="adress-section" class="col-sm-12">
+                    <div class="border-style">
+                        <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.8172724118604!2d1.4201802152752203!3d43.58952227912347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb0a0ad72c4b%3A0xa0f9854860384699!2sADRAR%20Formation%20Toulouse!5e0!3m2!1sfr!2sfr!4v1597843994446!5m2!1sfr!2sfr"
+                            width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
 
-                    <div id="adress-article">
-                        <p>
-                            4D - Assets Management <br>
-                            10, Place de la République <br>
-                            31000 Toulouse
-                        </p>
-                        <table class="table" id="hour-table">
-                            <tbody>
-                                <tr id="monday">
-                                    <th scope="row">Lundi</th>
-                                    <td>De 9h à 12h30 et 14h à 18h30</td>
-                                </tr>
+                        <div id="adress-article">
+                            <p>
+                                4D - Assets Management <br>
+                                10, Place de la République <br>
+                                31000 Toulouse
+                            </p>
+                            <table class="table" id="hour-table">
+                                <tbody>
+                                    <tr id="monday">
+                                        <th scope="row">Lundi</th>
+                                        <td>De 9h à 12h30 et 14h à 18h30</td>
+                                    </tr>
 
-                                <tr>
-                                    <th scope="row">Mardi</th>
-                                    <td>De 9h à 12h30 et 14h à 18h30</td>
-                                </tr>
+                                    <tr>
+                                        <th scope="row">Mardi</th>
+                                        <td>De 9h à 12h30 et 14h à 18h30</td>
+                                    </tr>
 
-                                <tr>
-                                    <th scope="row">Mercredi</th>
-                                    <td>De 9h à 12h30 et 14h à 18h30</td>
-                                </tr>
+                                    <tr>
+                                        <th scope="row">Mercredi</th>
+                                        <td>De 9h à 12h30 et 14h à 18h30</td>
+                                    </tr>
 
-                                <tr>
-                                    <th scope="row">Jeudi</th>
-                                    <td>De 9h à 12h30 et 14h à 18h30</td>
-                                </tr>
+                                    <tr>
+                                        <th scope="row">Jeudi</th>
+                                        <td>De 9h à 12h30 et 14h à 18h30</td>
+                                    </tr>
 
-                                <tr>
-                                    <th scope="row">Vendredi</th>
-                                    <td>De 9h à 12h30 et 14h à 18h30</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    <tr>
+                                        <th scope="row">Vendredi</th>
+                                        <td>De 9h à 12h30 et 14h à 18h30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                        <div>
                             <div>
-                                <p>
-                                    <span class="icon-phone"></span>
-                                    <a href="tel:+33561232323">(+33) 05 61 23 23 23</a>
-                                </p>
+                                <div>
+                                    <p>
+                                        <span class="icon-phone"></span>
+                                        <a href="tel:+33561232323">(+33) 05 61 23 23 23</a>
+                                    </p>
 
-                                <p>
-                                    <span class="icon-envelop"></span>
-                                    <a href="mailto:hello@4dam.com">hello@4dam.com</a>
-                                </p>
+                                    <p>
+                                        <span class="icon-envelop"></span>
+                                        <a href="mailto:hello@4dam.com">hello@4dam.com</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="legal-section" class="col-sm-12 border-style">
-                    <div>
-                        <p>
-                            <a class="icon-link" href=""><span class="icon-facebook2"></span> Suivez notre activité sur
-                                Facebook</a>
-                        </p>
+                <section id="legal-section" class="col-sm-12">
 
-                        <p>
-                            <a class="icon-link" href=""><span class="icon-linkedin"></span> Suivez notre activité sur
-                                LinkedIn</a>
+                    <div class="border-style">
+                        <div id="social-link">
+                            <p>
+                                <a class="icon-link" href=""><span class="icon-facebook2"></span> Suivez notre activité
+                                    sur
+                                    Facebook</a>
+                            </p>
+
+                            <p>
+                                <a class="icon-link" href=""><span class="icon-linkedin"></span> Suivez notre activité
+                                    sur
+                                    LinkedIn</a>
+                            </p>
+                        </div>
+
+                        <p id="legal-info">
+                            <a href="">Mention légales</a> <span>copyright &copy; 4Dam - 2020</span>
                         </p>
                     </div>
-
-                    <p id="legal-info">
-                        <a href="">Mention légales</a> <span>copyright &copy; 4Dam - 2020</span>
-                    </p>
                 </section>
             </div>
         </footer>

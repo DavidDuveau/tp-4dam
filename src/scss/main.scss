@@ -3,30 +3,32 @@
 @import "./../../assets/css/style.css";
 
 header {
+  margin-top: 1em;
   &.border-style {
     border: 2px solid $border-color !important;
   }
 
-  #div-logo {
-    #img-logo {
-      height: 10vh;
+  div {
+    div {
+      display: flex;
+      justify-content: center;
+
+      #img-logo {
+        height: 10vh;
+      }
     }
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-  }
 
-  h1 {
-    color: $main-text-color;
+    h1 {
+      color: $main-text-color;
+      font-size: 0.9em;
+      text-align: center;
 
-    font-size: 0.9em;
-    text-align: center;
-
-    //span with kolossal class
-    span {
-      &.kolossal {
-        text-transform: uppercase;
-        color: $emphasis-main-text;
+      //span with kolossal class
+      span {
+        &.kolossal {
+          text-transform: uppercase;
+          color: $emphasis-main-text;
+        }
       }
     }
   }
@@ -34,7 +36,6 @@ header {
 
 #synop-section {
   text-align: justify;
-  margin: 0.5em;
 }
 
 .btn-success {
@@ -42,7 +43,6 @@ header {
 }
 
 #staff-section {
-  margin: 0.5em;
   text-align: justify;
 
   .staff-article {
@@ -87,56 +87,64 @@ header {
 }
 
 #formulaire-section {
-  padding: 0.8em;
-  margin: 0 1em 0.5em 1em;
-  border: 1px solid rgb(41, 41, 41);
+  margin-bottom: 1em;
 
-  #div-btn-subForm {
-    display: flex;
-    justify-content: center;
-  }
+  div {
+    &#div-form {
+      padding: 1em;
 
-  &.border-style {
-    border: 2px solid $border-color !important;
+      &.border-style {
+        border: 2px solid $border-color !important;
+      }
+
+      form {
+        #div-btn-subForm {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
   }
 }
 
 #adress-section {
-  margin: 0 1em 0.5em 1em;
+  margin-bottom: 1em;
 
-  &.border-style {
-    border: 2px solid $border-color !important;
-  }
+  div {
+    padding: 1em;
 
-  #map {
-    margin: 0.5em 0 2em 0;
-  }
-
-  #adress-article {
-    font-size: 1em;
-    text-align: center;
-
-    #hour-table {
-      font-size: 0.7em;
-      padding: 0.5em;
-      border: 1px solid $border-color;
-
-      #monday {
-        background-color: $highlight-article;
-      }
+    &.border-style {
+      border: 2px solid $border-color !important;
     }
 
-    div {
-      display: flex;
-      justify-content: left;
+    #adress-article {
+      margin: 0 -1em;
+      font-size: 1em;
+      text-align: center;
+      padding-bottom: 0;
+
+      #hour-table {
+        font-size: 0.7em;
+        border: 1px solid $border-color;
+
+        #monday {
+          background-color: $highlight-article;
+        }
+      }
 
       div {
-        text-align: left;
-        display: block;
-        margin-bottom: 1rem;
+        display: flex;
+        justify-content: left;
+        background-color: $highlight-article;
 
-        p {
-          margin-bottom: 0 !important;
+        div {
+          margin: -1em;
+          text-align: left;
+          display: block;
+
+          p {
+            margin-bottom: 0 !important;
+          }
         }
       }
     }
@@ -144,30 +152,46 @@ header {
 }
 
 #legal-section {
-  padding-top: 1em;
-  margin: 0 1em 0.5em 1em;
-  text-align: justify;
-
-  &.border-style {
-    border: 2px solid $border-color !important;
-  }
-
   div {
-    margin-bottom: 1rem;
+    padding: 1em;
+    margin-bottom: 5em;
 
-    p {
-      margin-bottom: 0 !important;
+    &.border-style {
+      border: 2px solid $border-color !important;
+    }
 
-      a {
-        color: inherit;
-        font-family: Helvetica !important;
+    #social-link {
+      padding: 0;
+      margin-bottom: 1em;
+
+      p {
+        margin-bottom: 0 !important;
+
+        a {
+          color: #000000 !important;
+          font-family: Helvetica !important;
+        }
       }
     }
-  }
 
-  #legal-info {
-    font-size: 0.7em;
-    display: flex;
-    justify-content: space-between;
+    #legal-info {
+      font-size: 1em;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0 !important;
+    }
   }
+}
+
+#carousel-presentation {
+  margin: 1em 0;
+
+  #carouselDesk {
+    width: 900px;
+    margin: 0 auto !important;
+  }
+}
+
+.img-carousel {
+  height: 600px;
 }

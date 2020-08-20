@@ -9897,30 +9897,31 @@ h3 {
     border-color: #6c9e32;
   }
 }
+header {
+  margin-top: 1em;
+}
 header.border-style {
   border: 2px solid #6c9e32 !important;
 }
-header #div-logo {
+header div div {
   display: flex;
   justify-content: center;
-  padding: 0.5em;
 }
-header #div-logo #img-logo {
+header div div #img-logo {
   height: 10vh;
 }
-header h1 {
+header div h1 {
   color: #0f110f;
   font-size: 0.9em;
   text-align: center;
 }
-header h1 span.kolossal {
+header div h1 span.kolossal {
   text-transform: uppercase;
   color: #9fcf67;
 }
 
 #synop-section {
   text-align: justify;
-  margin: 0.5em;
 }
 
 .btn-success {
@@ -9928,7 +9929,6 @@ header h1 span.kolossal {
 }
 
 #staff-section {
-  margin: 0.5em;
   text-align: justify;
 }
 #staff-section .staff-article {
@@ -9963,74 +9963,90 @@ header h1 span.kolossal {
 }
 
 #formulaire-section {
-  padding: 0.8em;
-  margin: 0 1em 0.5em 1em;
-  border: 1px solid #292929;
+  margin-bottom: 1em;
 }
-#formulaire-section #div-btn-subForm {
+#formulaire-section div#div-form {
+  padding: 1em;
+}
+#formulaire-section div#div-form.border-style {
+  border: 2px solid #6c9e32 !important;
+}
+#formulaire-section div#div-form form #div-btn-subForm {
   display: flex;
   justify-content: center;
 }
-#formulaire-section.border-style {
-  border: 2px solid #6c9e32 !important;
-}
 
 #adress-section {
-  margin: 0 1em 0.5em 1em;
+  margin-bottom: 1em;
 }
-#adress-section.border-style {
+#adress-section div {
+  padding: 1em;
+}
+#adress-section div.border-style {
   border: 2px solid #6c9e32 !important;
 }
-#adress-section #map {
-  margin: 0.5em 0 2em 0;
-}
-#adress-section #adress-article {
+#adress-section div #adress-article {
+  margin: 0 -1em;
   font-size: 1em;
   text-align: center;
+  padding-bottom: 0;
 }
-#adress-section #adress-article #hour-table {
+#adress-section div #adress-article #hour-table {
   font-size: 0.7em;
-  padding: 0.5em;
   border: 1px solid #6c9e32;
 }
-#adress-section #adress-article #hour-table #monday {
-  background-color: #e8f4db;
+#adress-section div #adress-article #hour-table #monday {
+  background-color: #d0e7b5;
 }
-#adress-section #adress-article div {
+#adress-section div #adress-article div {
   display: flex;
   justify-content: left;
+  background-color: #d0e7b5;
 }
-#adress-section #adress-article div div {
+#adress-section div #adress-article div div {
+  margin: -1em;
   text-align: left;
   display: block;
-  margin-bottom: 1rem;
 }
-#adress-section #adress-article div div p {
+#adress-section div #adress-article div div p {
   margin-bottom: 0 !important;
 }
 
-#legal-section {
-  padding-top: 1em;
-  margin: 0 1em 0.5em 1em;
-  text-align: justify;
+#legal-section div {
+  padding: 1em;
+  margin-bottom: 5em;
 }
-#legal-section.border-style {
+#legal-section div.border-style {
   border: 2px solid #6c9e32 !important;
 }
-#legal-section div {
-  margin-bottom: 1rem;
+#legal-section div #social-link {
+  padding: 0;
+  margin-bottom: 1em;
 }
-#legal-section div p {
+#legal-section div #social-link p {
   margin-bottom: 0 !important;
 }
-#legal-section div p a {
-  color: inherit;
+#legal-section div #social-link p a {
+  color: #000000 !important;
   font-family: Helvetica !important;
 }
-#legal-section #legal-info {
-  font-size: 0.7em;
+#legal-section div #legal-info {
+  font-size: 1em;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0 !important;
+}
+
+#carousel-presentation {
+  margin: 1em 0;
+}
+#carousel-presentation #carouselDesk {
+  width: 900px;
+  margin: 0 auto !important;
+}
+
+.img-carousel {
+  height: 600px;
 }
 
 /*# sourceMappingURL=main.css.map */
